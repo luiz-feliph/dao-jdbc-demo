@@ -30,6 +30,6 @@ replay_pid*
 # MacOS
 .DS_Store
 
-# Database configuration (NÃO subir credenciais)
+# Database configuration
 db.properties
 src/main/resources/db.properties

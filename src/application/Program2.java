@@ -3,8 +3,6 @@ package application;
 import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
 import model.entities.Department;
-import model.entities.Seller;
-
 import java.util.List;
 
 public class Program2 {
@@ -20,5 +18,10 @@ public class Program2 {
         for (Department obj : list) {
             System.out.println(obj);
         }
+
+        System.out.println("\n=== TEST 3: Department insert =====");
+        Department newDepartment = new Department(null, "Foods");
+        departmentDao.insert(newDepartment);
+        System.out.println("Inserted! New id = " + newDepartment.getId());
     }
 }
